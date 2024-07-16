@@ -1,179 +1,33 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-
-	html{
-  background: rgb(76, 105, 119);
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.h1{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 33pt;
-	color: white;
-	text-align: center;
-	}
-
-.h2{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 33pt;
-	color: white;
-	text-align: center;
-}
-
-.p{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 23pt;
-	color: white;
-	text-align: center;
-
-	}
-.container{
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -150px 0 0 -150px;
-}
-
-.square{
-  height: 94%;
-  width: 94%;
-  background: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -47% 0 0 -47%;
-}
-
-.black{ 
-  background: black;  
-  animation: rotate 10s infinite linear; 
-}
-
-@keyframes rotate{
-  0%{ transform: rotate(0deg); }
-	100%{ transform: rotate(360deg); }	
-}
-
-body {
-  overflow: scroll; /* Show scrollbars */
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 </style>
-
+</head>
 <body>
-		<h1 class="h1">Welcome to my training website, I am Clayton Reitz a software engineer based in the Netherlands with 12 years of software development experience</h1>
-		<h1 class="h1">Join me in making this website look amazing, or at least something to look at<br>
-		<h1 class="h1"><br>Software Engineering<br> Portfolio <br>Clayton Reitz<br></h1>
-		<div class="p">
-			<span>
-				<address>
-					Written by <a href="mailto:reitzclayton@gmail.com">Clayton Reitz</a>.<br> 
-					Amsterdam<br>
-					NL
-				</address>
-			</span>
-		</div>
-			<div class="p">
-				<h2 class="h2">Working experience</h2>
-			</div>
-		<div class="p">
-			<table>
-				<colgroup>
-					<col>
-					<col>
-					<col>
-				</colgroup>
-				<tr>
-					<th>Company</th>
-					<th>What did I do</th>
-					<th>Tech-Stack</th>
-					<th>Link</th>
-				</tr>
-				<tr>
-					<td>Belastingdients</td>
-					<td>Java Engineer</td>
-					<td>Java, Tekton, SpringBoot, Angular 17, Azure DevOps</td>
-					<td>https://www.google.com</td>
-				</tr>
-				<tr>
-					<td>Gardsign</td>
-					<td> DevOps / Java Engineer</td>
-					<td>Java, Kubes SpringBoot, Docker, Linode a.k.a Akamai</td>
-					<td>https://www.google.com</td>
-				</tr>
-				<tr>
-					<td>Omnia Retial</td>
-					<td>Angular Typescript Front End Engineer</td>
-					<td>TypeScript, Angular JS -> Angular 14, Azure DevOps</td>
-					<td>https://www.google.com</td>
-				</tr>
-				<tr>
-					<td>ABB Ltd</td>
-					<td>Full stack Java Engineer</td>
-					<td>Java, Azure DevOps, TypeScript, Angular</td>
-					<td>https://www.google.com</td>
-				</tr>
-				<tr>
-					<td>Freelance</td>
-					<td>Fullstack Java Engineer</td>
-					<td>Java 8, Angular TypeScript, AWS EC2, spring-boot</td>
-					<td>https://www.google.com</td>
-				</tr>
-				<tr>
-					<td>Metropolitian Health</td>
-					<td>Java Engineer</td>
-					<td>Java 8, Fedora, WebSphere Application Server, DBMS, JDBC</td>
-					<td>https://www.google.com</td>
-				</tr>
-				<tr>
-					<td>Santam</td>
-					<td>Java Engineer</td>
-					<td>Java, Hibernate, Git, </td>
-					<td>https://www.google.com</td>
-				</tr>
-			</table>
-			<br>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Claybytes 
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">35 days left</p>
+  </div>
+</div>
 
-			<label for="disk_c">Java</label>
-			<meter id="disk_c" value="9" min="0" max="10">2 out of 10</meter><br>
-
-			<label for="disk_d">TypeScript</label>
-			<meter id="disk_d" value="0.6">60%</meter>
-
-			<h2 class="h1">Explore my interests, below is my Youtube, etc.</h2>
-			<br>
-			<article>
-				<h2>Job 1</h2>
-				<p>development of a REST API in Java 17+ with Quarkus framework for Gardsign online garden drawing tool with Postgres in a containerized environment with Docker and Kubernetes, Psql as a database language</p>
-			  </article>
-			  
-			  <article>
-				<h2>Job 2</h2>
-				<p>migrated dynamic pricing product from AngularJS to Angular 14 and worked as a Senior Frontend Engineer with Typescript and Azure as a cloud provider on the dynamic pricing product following development and design practice of building user interfaces with modular components.</p>
-			  </article>
-			  
-			  <article>
-				<h2>Job 3</h2>
-				<p>developed a low-level, high-performance HMI (human-computer interface) using Java, Angular 13, TypeScript and HTML5/CSS3. Part the embedded team to integrate low-level edge computing into the charging infrastructure</p>
-			  </article>
-			  <article>
-				<h2>Job 4</h2>
-				<p>development of a REST API in Java 17+ with Quarkus framework for Gardsign online garden drawing tool with Postgres in a containerized environment with Docker and Kubernetes, Psql as a database language</p>
-			  </article>
-			  
-			  <article>
-				<h2>Job 5</h2>
-				<p>migrated dynamic pricing product from AngularJS to Angular 14 and worked as a Senior Frontend Engineer with Typescript and Azure as a cloud provider on the dynamic pricing product following development and design practice of building user interfaces with modular components.</p>
-			  </article>
-			  
-			  <article>
-				<h2>Job 6</h2>
-				<p>developed a low-level, high-performance HMI (human-computer interface) using Java, Angular 13, TypeScript and HTML5/CSS3. Part the embedded team to integrate low-level edge computing into the charging infrastructure</p>
-			  </article>
-		</div>
 </body>
 </html>
