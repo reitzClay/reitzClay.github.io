@@ -2,6 +2,13 @@
 <html>
 <head>
 <title>Home</title>
+
+<style>
+    canvas {
+      border: 2px solid black;
+    }
+</style>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Load an icon library -->
@@ -27,8 +34,16 @@
 </div>
 
 <div>
-  <canvas id="tutorial" width="300" height="300" alt="A tutorial on Canvas 2D"></canvas>
-  <script src="js/index.js"></script>
+  <canvas id="tutorial" width="500" height="500"></canvas>
+    <script>
+      function draw() {
+        const canvas = document.getElementById("tutorial");
+        if (canvas.getContext) {
+          const ctx = canvas.getContext("2d");
+        }
+      }
+      window.addEventListener("load", draw);
+    </script>
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
@@ -41,6 +56,5 @@
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">POWER</a></p>
 </footer>
-
 </body>
 </html>
